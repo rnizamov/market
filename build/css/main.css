@@ -359,20 +359,8 @@ th {
 html {
   font-family: 'Merriweather', serif; }
 
-/* Clearfix */
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  clear: both;
-  *zoom: 1; }
-
 section.one {
+  position: relative;
   margin: 44px auto 0 auto;
   padding: 0 0 0 0;
   min-width: 1180px;
@@ -411,7 +399,7 @@ div.wrapper::before {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -155px;
+  left: -9.66em;
   background-color: rgba(255, 255, 255, 0.1);
   content: '';
   display: block;
@@ -474,7 +462,20 @@ nav a {
 .heading {
   font-size: 300px;
   color: white;
-  margin: 0 0; }
+  font-weight: 900;
+  margin: 0 0;
+  padding: 391px 0 0 49px;
+  height: 300px; }
+
+.heading::after {
+  position: absolute;
+  background: url(../i/space.png);
+  content: '';
+  display: block;
+  left: 180px;
+  top: 700px;
+  width: 214px;
+  height: 35px; }
 
 .date {
   font-size: 14px;
@@ -482,7 +483,9 @@ nav a {
   font-weight: 500;
   color: white;
   text-transform: uppercase;
-  line-height: 1.7; }
+  line-height: 1.7;
+  margin: 0 0;
+  padding: 19px 0 0 573px; }
 
 .after_date {
   font-size: 45px;
@@ -492,7 +495,10 @@ nav a {
   text-transform: uppercase;
   line-height: 1.111;
   text-align: left;
-  width: 600px; }
+  width: 600px;
+  height: 105px;
+  margin: 0 0;
+  padding: 12px 0 0 573px; }
 
 .annotation {
   font-size: 15px;
@@ -500,4 +506,29 @@ nav a {
   color: white;
   line-height: 1.6;
   text-align: left;
-  width: 430px; }
+  width: 430px;
+  margin: 0 0;
+  padding: 12px 0 0 573px; }
+
+.one .horizontal_text {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  font-size: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #b6b6b6;
+  text-transform: uppercase;
+  line-height: 5.5;
+  text-align: left; }
+
+.one .vertical {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: left;
+  top: 300px;
+  left: 1600px; }
