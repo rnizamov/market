@@ -359,24 +359,55 @@ th {
 html {
   font-family: 'Merriweather', serif; }
 
+section.horizontal_text {
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
+  min-width: 1180px;
+  max-width: 1600px;
+  overflow: hidden;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+div.horizontal_text {
+  display: block;
+  width: 1561px;
+  position: relative; }
+
+.horizontal_text {
+  height: 44px;
+  margin: 0 0;
+  padding: 0 0;
+  left: -47px;
+  top: -1px;
+  position: relative;
+  font-size: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #b6b6b6;
+  text-transform: uppercase;
+  line-height: 5.5;
+  text-align: left; }
+
 section.one {
   position: relative;
-  margin: 44px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0 0 0 0;
   min-width: 1180px;
   max-width: 1600px;
   background-color: #bd000c;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden; }
+
+.flex {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
   /* NEW - Chrome */
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  overflow: hidden; }
+  display: flex; }
 
 div.one {
   display: block;
@@ -510,25 +541,30 @@ nav a {
   margin: 0 0;
   padding: 12px 0 0 573px; }
 
-.one .horizontal_text {
+.vertical_right {
+  margin: 0 0;
+  padding: 0 0;
   position: absolute;
-  top: -20px;
-  left: 0px;
-  font-size: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #b6b6b6;
-  text-transform: uppercase;
-  line-height: 5.5;
-  text-align: left; }
-
-.one .vertical {
-  position: absolute;
+  right: -243px;
+  top: 287px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 10px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  text-align: left;
-  top: 300px;
-  left: 1600px; }
+  text-align: left; }
+
+.vertical_left {
+  margin: 0 0;
+  padding: 0 0;
+  position: absolute;
+  left: -243px;
+  bottom: 287px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: left; }
