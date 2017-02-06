@@ -2,68 +2,53 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i');
-
+$width: 1600px;
 
 html {
   font-family: 'Merriweather', serif;
 }
 
-section.horizontal_text {
+.wrap_section {
   margin: 0 auto 0 auto;
   padding: 0 0 0 0;
   min-width: 1180px;
-  max-width: 1600px;
+  max-width: $width;
   overflow: hidden;
-  justify-content: flex-end;
 }
 
-div.horizontal_text {
-  display: block;
-  width: 1561px;
-  position: relative;
-}
 
 .horizontal_text {
   height: 44px;
   margin: 0 0;
-  padding:0 0;
-  left: - 47px;
-  top: -1px;
+  padding:0 0 0 90px;
+  line-height: 44px;
   position: relative;
   font-size: 10px;
   font-family: 'Roboto Condensed', sans-serif;
   color: rgb(182, 182, 182);
   text-transform: uppercase;
-  line-height: 5.5;
   text-align: left;
 }
 
-
 section.one {
+  width: 100%;
+  min-height: 1131px;
   position: relative;
-  margin: 0 auto 0 auto;
-  padding: 0 0 0 0;
-  min-width: 1180px;
-  max-width: 1600px;
-  background-color: rgba(189, 0, 12, 1);
-  justify-content: flex-end;
-  overflow: hidden;
- }
+  box-sizing: border-box;
+  padding-left: 39px;
+}
 
-.flex{
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
+div.menu {
+  position: absolute;
+  left: 9px;
+  top: 200px;
+  font-size: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  width: 1591px;
 }
 
 div.one {
-  display: block;
-  width: 1561px;
-  min-height: 1131px;
-  background: url(../i/section1.png) center top no-repeat ;
-  position: relative;
+  background: url(../i/section1.png)  rgba(189, 0, 12, 1) center top no-repeat ;
 }
 
 div.one::before {
@@ -95,17 +80,7 @@ div.wrapper {
   height: 100%;
 }
 
-div.menu {
- position: absolute;
- left: -220px;
- top: 218px;
- font-size: 0;
- max-width: 1900px;
- border-bottom: 1px solid rgba(255,255,255,0.1);
- width: 1591px;
 
-
-}
 
 a.logo {
  box-sizing: border-box;
