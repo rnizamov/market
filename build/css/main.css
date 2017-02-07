@@ -426,9 +426,8 @@ section.white_padding {
   padding-left: 39px; }
 
 div.menu_left {
-  position: absolute;
-  left: 9px;
-  top: 200px;
+  padding: 222px 0 0 0;
+  margin: 0 0 0 -30px;
   font-size: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 1591px; }
@@ -471,11 +470,21 @@ div.one::before {
   background-color: rgba(255, 255, 255, 0.1);
   content: '';
   display: block;
-  width: 1px; }
+  width: 1px;
+  z-index: 2; }
 
 div.one {
-  background: url(../i/section1.png) #bd000c center top no-repeat;
-  min-height: 1131px; }
+  background: url(../i/section1.png) center top no-repeat;
+  min-height: 1132px; }
+
+div.one::after {
+  position: absolute;
+  background: url(../i/2wave.png) center top no-repeat;
+  left: 0;
+  right: 0;
+  content: '';
+  display: block;
+  height: 266px; }
 
 div.wrapper {
   width: 1180px;
@@ -488,8 +497,8 @@ div.wrapper {
   color: white;
   font-weight: 900;
   margin: 0 0;
-  padding: 391px 0 0 49px;
-  min-height: 300px; }
+  padding: 141px 0 0 49px;
+  height: 300px; }
 
 .heading::after {
   position: absolute;
@@ -497,7 +506,7 @@ div.wrapper {
   content: '';
   display: block;
   left: 180px;
-  top: 700px;
+  top: 460px;
   width: 214px;
   height: 35px; }
 
