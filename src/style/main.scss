@@ -32,63 +32,11 @@ html {
   line-height: 44px;
 }
 
-a.logo {
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  font-style: italic;
-  line-height: 1.2;
-  margin: 0 0;
-  padding-top: 20px;
-  width: 66px;
-  height: 66px;
-  background-color: rgba(189, 0, 12, 1);
-  text-align: center;
-  text-decoration: none;
-}
-
-nav {
-  box-sizing: border-box;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-nav ul {
-  margin: 0 0;
-  padding: 0 0;
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 0;
-  padding:  0 0 0 35px;
-  list-style: none;
-}
-
-nav a {
-  display: block;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color:white;
-  text-transform: uppercase;
-}
-
 section.white_padding {
   width: 100%;
   position: relative;
   box-sizing: border-box;
   padding-left: 39px;
-}
-
-div.menu_left {
-  padding: 222px 0 0 0 ;
-  margin: 0 0 0 -30px;
-  font-size: 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  width: 1591px;
 }
 
 .menu_fixed {
@@ -144,14 +92,69 @@ div.one {
   min-height: 1132px;
 }
 
+
+div.menu_left {
+  padding: 222px 0 0 0 ;
+  margin: 0 0 0 -30px;
+  font-size: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  width: 1591px;
+}
+
+a.logo {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  line-height: 1.2;
+  margin: 0 0;
+  padding:20px 0 0 0;
+  width: 66px;
+  height: 66px;
+  background-color: rgba(189, 0, 12, 1);
+  text-align: center;
+  text-decoration: none;
+}
+
+nav {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0;
+  padding:  0 0 0 35px;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color:white;
+  text-transform: uppercase;
+}
+
+
 div.one::after {
   position: absolute;
   background: url(../i/two_wave.png) center top no-repeat;
   left: 39px;
   right: 0;
+  bottom: 0;
   content: '';
   display: block;
-  height: 266px;
+  height: 300px;
 
 }
 
