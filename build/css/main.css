@@ -384,12 +384,12 @@ section.white_padding {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding-left: 39px; }
+  padding-left: 40px; }
 
 .menu_fixed {
-  top: 111px;
   position: fixed;
-  right: 90px;
+  max-width: 1600px;
+  background-color: rgba(98, 25, 30, 0.4);
   z-index: 1; }
 
 .menu_right {
@@ -429,7 +429,8 @@ div.one::before {
 
 div.one {
   background: url(../i/section1.png) center top no-repeat;
-  min-height: 1132px; }
+  min-height: 1132px;
+  width: 100%; }
 
 div.menu_left {
   padding: 222px 0 0 0;
@@ -480,7 +481,7 @@ nav a {
 div.one::after {
   position: absolute;
   background: url(../i/two_wave.png) center top no-repeat;
-  left: 39px;
+  left: 40px;
   right: 0;
   bottom: 0;
   content: '';
@@ -570,4 +571,29 @@ div.wrapper {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
+  text-align: left;
+  z-index: 2; }
+
+div.two {
+  background: #cc171e;
+  width: 100%;
+  overflow: hidden; }
+
+.two > p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 169px;
+  font-size: 35px;
+  color: white;
+  line-height: 1.2;
   text-align: left; }
+
+.two > div {
+  overflow: hidden;
+  margin: 0 0 0 170px;
+  background-color: rgba(23, 32, 21, 0.4); }
+
+.two > div > div {
+  display: inline-block;
+  width: 280px;
+  height: 192px;
+  margin: 0 50px 0 0; }
