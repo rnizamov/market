@@ -350,8 +350,204 @@ section.three {
   background: url(../i/three_background.png) left 40px top no-repeat;
   width: 100%;
   min-height: 914px;
+  padding:0 0 ;
+  position: relative;
 }
 
-.three {
+.three ul {
+  margin: 0 0;
+  padding:150px 0 0 0;
+  list-style: none;
+}
+
+.three li {
+  display: inline-block;
+  margin: 0 0;
+  padding: 0 0;
 
 }
+
+.three li + li::before {
+  content: '/ ';
+  font-size: 14px;
+  color: #333c42;
+}
+
+.three a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.three li:nth-child(n+2){
+  a {
+    color:rgb(161,162,164);
+  }
+}
+
+.three a:active {
+  color: rgb(209, 35, 42);
+}
+
+.three a:focus {
+  color: rgb(209, 35, 42);
+}
+
+.column1-3 div {
+  display: inline-block;
+}
+
+div.first {
+  width: 368px;
+  margin: 0 100px 0 0;
+  vertical-align: top;
+}
+
+.first h2 {
+  color:white;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 35px;
+}
+
+.first p {
+ font-size: 20px;
+ color: rgb(176, 177, 180);
+ font-style: italic;
+ line-height: 1.45;
+}
+
+.first ~ div {
+  width: 340px;
+  line-height: 1.9;
+  font-size: 13px;
+  margin: 20px 0 0 0;
+  color: rgb(176, 177, 180);
+
+}
+
+.column1-3  div:nth-child(2) {
+  margin: 20px 22px 0 0;
+}
+
+.three .vertical_right {
+  margin: 0 0;
+  padding: 0 0;
+  position: absolute;
+  top: 286px;
+  right: -25px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: left;
+  line-height: 4.091;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+div.four {
+  background:rgb(242,242,242);
+  width: 1390px;
+  padding: 0 0 0 210px;
+  min-height: 710px;
+  overflow: hidden;
+}
+
+div.four > div {
+  display: inline-block;
+  min-height: 572px;
+  width: 380px;
+  background-color: white;
+  margin: 0 0 0 20px;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
+
+
+}
+
+.four p:nth-of-type(1) {
+  font-size: 23px;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  text-align: left;
+  margin: 30px 0 0 36px;
+ }
+
+.four p:nth-of-type(2) {
+  font-size: 13px;
+  color:rgb(105, 123, 131);
+  line-height: 1.9;
+  text-align: left;
+  width: 310px;
+  margin: 15px 0 0 36px;
+}
+
+.four form {
+  margin: 46px 0 0 0;
+  position: relative;
+}
+
+.four input {
+  width: 319px;
+  height: 57px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 0 0;
+  margin: 0 0;
+  float: left;
+  background: url("../i/pen.png") no-repeat  top 24px left 29px;
+}
+
+.four button {
+  width: 61px;
+  height: 57px;
+  box-sizing: border-box;
+  border:none;
+  padding: 0 0;
+  margin: 0 0;
+  background: rgb(209, 35, 42);
+  color: white;
+  font-size: 20px;
+}
+
+.four ::-webkit-input-placeholder {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  color: rgb(209, 35, 42);
+  line-height: 2.5;
+  text-align: left;
+  padding: 0 0 0 53px;
+}
+
+.four ::-moz-placeholder {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  color: rgb(209, 35, 42);
+  line-height: 2.5;
+  text-align: left;
+  padding: 0 0 0 53px;
+}
+
+.four :-moz-placeholder {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  color: rgb(209, 35, 42);
+  line-height: 2.5;
+  text-align: left;
+  padding: 0 0 0 53px;
+}
+
+.four :-ms-input-placeholder {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  color: rgb(209, 35, 42);
+  line-height: 2.5;
+  text-align: left;
+  padding: 0 0 0 53px;
+}
+
