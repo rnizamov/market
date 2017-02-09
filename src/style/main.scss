@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i');
 $width: 1600px;
-$your_width: your_width ;
 
 html {
   font-family: 'Merriweather', serif;
@@ -44,7 +43,7 @@ section.white_padding {
   position: fixed;
   max-width: 1600px;
   background-color: rgba(98,25,30,.4);
-  z-index: 1;
+  z-index: 10;
 }
 
 .menu_right {
@@ -260,6 +259,18 @@ div.wrapper {
   z-index: 2;
 }
 
+div.two::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 74px;
+  background-color:rgba(255,255,255,0.1);
+  content: '';
+  display: block;
+  width: 1px;
+  z-index: 2;
+}
+
 div.two {
   background: #cc171e;
   width: 100%;
@@ -276,16 +287,71 @@ div.two {
 }
 
 .two > div {
- // max-width: 1390px;
-  //min-width: 1180px;
-  overflow: hidden;
-  margin: 0 0 0 170px;
-  background-color: rgba(23,32,21,0.4);
+ width: 1390px;
+ overflow: hidden;
+ margin: 40px 0 0 170px;
 }
 
 .two > div > div {
+  position: relative;
   display: inline-block;
-  width: 280px;
+  width: 283px;
+  margin: 0 60px 0 0;
+}
+
+.two img {
+  width: 283px;
   height: 192px;
-  margin: 0 50px 0 0;
+}
+
+.two a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  background: #cc171e;
+  color:white;
+  text-decoration: none;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+
+.two div > p {
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+footer.two::before {
+  position: absolute;
+  top: 0;
+  bottom: 24px;
+  left: 34px;
+  background-color:rgba(255,255,255,0.1);
+  content: '';
+  display: block;
+  width: 1px;
+
+}
+
+footer.two {
+  position: relative;
+  background: url(../i/two_footer.png) no-repeat left top;
+  width: 100%;
+  min-height: 106px;
+  z-index: 3;
+}
+
+section.three {
+  background: url(../i/three_background.png) left 40px top no-repeat;
+  width: 100%;
+  min-height: 914px;
+}
+
+.three {
+
 }
