@@ -651,7 +651,7 @@ footer.two {
   z-index: 3; }
 
 section.three {
-  background: url(../i/three_background.png) left 40px top no-repeat;
+  background: url(../i/three_background.png) center top no-repeat;
   width: 100%;
   min-height: 914px;
   padding: 0 0;
@@ -723,7 +723,7 @@ div.first {
   padding: 0 0;
   position: absolute;
   top: 286px;
-  right: -25px;
+  right: -200px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 11px;
