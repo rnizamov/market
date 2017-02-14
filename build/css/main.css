@@ -936,15 +936,14 @@ div.first {
 section.four {
   background: #f2f2f2;
   margin: 0 0 0 40px;
-  padding: 0 0 0 0;
+  padding: 50px 0 75px 0;
   width: 100%;
   box-sizing: border-box; }
 
 div.four.slider {
   width: 1415px;
   margin: 0 0 0 auto;
-  overflow: hidden;
-  min-height: 572px; }
+  overflow: hidden; }
 
 .slider img {
   width: 380px;

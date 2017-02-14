@@ -457,7 +457,7 @@ div.first {
 section.four {
   background:rgb(242,242,242);
   margin: 0 0 0 40px;
-  padding: 0 0 0 0;
+  padding: 50px 0 75px 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -466,8 +466,6 @@ div.four.slider {
   width: 1415px;
   margin:0 0 0 auto;
   overflow: hidden;
-  min-height: 572px;
-
 }
 
 .slider img {
@@ -481,10 +479,7 @@ div.four.slider {
   outline: none;
   background-color: white;
   box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
-
 }
-
-
 
 .four p:nth-of-type(1) {
   font-size: 23px;
