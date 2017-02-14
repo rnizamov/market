@@ -584,7 +584,7 @@ section.white_padding {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding-left: 40px; }
+  padding: 0 0 0 40px; }
 
 .menu_fixed {
   position: fixed;
@@ -933,19 +933,30 @@ div.first {
   line-height: 4.091;
   color: rgba(255, 255, 255, 0.5); }
 
-div.four > div {
-  background-color: white;
-  margin: 0 0 0 20px;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05); }
+section.four {
+  background: #f2f2f2;
+  margin: 0 0 0 40px;
+  padding: 0 0 0 0;
+  width: 100%;
+  box-sizing: border-box; }
+
+div.four.slider {
+  width: 1415px;
+  margin: 0 0 0 auto;
+  overflow: hidden;
+  min-height: 572px; }
 
 .slider img {
-  box-sizing: border-box; }
+  width: 380px;
+  height: 269px; }
 
 .slick-slide {
   width: 380px;
-  padding: 0 0 0 10px;
-  margin: 10px 0 0 10px;
-  outline: none; }
+  padding: 0 0 0 0;
+  margin: 0 20px 0 0;
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05); }
 
 .four p:nth-of-type(1) {
   font-size: 23px;

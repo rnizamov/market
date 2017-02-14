@@ -38,7 +38,7 @@ section.white_padding {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding-left: 40px;
+  padding:0 0 0 40px;
 }
 
 .menu_fixed {
@@ -454,37 +454,36 @@ div.first {
   color: rgba(255, 255, 255, 0.5);
 }
 
-//div.four {
-//  background:rgb(242,242,242);
-//  width: 1390px;
-//  padding: 0 0 0 210px;
-//  min-height: 710px;
-//  overflow: hidden;
-//}
-//
-div.four > div {
-  //display: inline-block;
- // min-height: 572px;
- // width: 380px;
-  background-color: white;
-  margin: 0 0 0 20px;
-  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
+section.four {
+  background:rgb(242,242,242);
+  margin: 0 0 0 40px;
+  padding: 0 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+div.four.slider {
+  width: 1415px;
+  margin:0 0 0 auto;
+  overflow: hidden;
+  min-height: 572px;
+
+}
 
 .slider img {
-  box-sizing: border-box;
-  // width: 125px;
-  // height: 125px;
-  // border: solid 3px rgb(195, 195, 195);
+  width: 380px;
+  height: 269px;
 }
-
 .slick-slide{
   width: 380px;
-  padding: 0 0 0 10px;
-  margin: 10px 0 0 10px;
+  padding: 0 0 0 0;
+  margin: 0 20px 0 0;
   outline: none;
+  background-color: white;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
+
 }
+
 
 
 .four p:nth-of-type(1) {

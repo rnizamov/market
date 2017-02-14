@@ -1,7 +1,8 @@
 $('.slider').slick({
         variableWidth: true,
         arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow:1,
+        slidesToScroll:1,
+        infinite: true,
     }
 );
