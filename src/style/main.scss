@@ -460,14 +460,27 @@ section.four {
   padding: 50px 0 75px 0;
   width: 100%;
   box-sizing: border-box;
-  flex-direction: row;
-  align-items: stretch;
 }
 
 div.four.slider {
   width: 1415px;
   margin: 0 0 0 auto;
   overflow: hidden;
+}
+
+
+
+.slider img {
+  width: 380px;
+
+}
+.slick-slide{
+  width: 380px;
+  padding: 0 0 0 0;
+  margin: 0 20px 0 0;
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
 }
 
 .slick-slider .slick-track, .slick-slider .slick-list {
@@ -480,18 +493,14 @@ div.four.slider {
   align-items: stretch;
 }
 
-.slider img {
-  width: 380px;
-  height: 269px;
-}
-.slick-slide{
-  width: 380px;
-  padding: 0 0 0 0;
-  margin: 0 20px 0 0;
-  outline: none;
-  background-color: white;
-  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
-
+.slick-initialized .slick-slide {
+  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  flex-direction: column;
+  justify-content:space-between;
 }
 
 .four p:nth-of-type(1) {

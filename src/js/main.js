@@ -3,7 +3,6 @@ $('.slider').slick({
         arrows: false,
         slidesToShow:3,
         slidesToScroll:1,
-        infinite: true,
-        adaptiveHeight: true,
+        infinite: true
     }
 );
