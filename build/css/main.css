@@ -948,20 +948,18 @@ div.four.slider {
 .slider img {
   width: 380px; }
 
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
 .slick-slide {
   width: 380px;
   padding: 0 0 0 0;
   margin: 0 20px 0 0;
   outline: none;
   background-color: white;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05); }
-
-.slick-track {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important; }
-
-.slick-initialized .slick-slide {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
