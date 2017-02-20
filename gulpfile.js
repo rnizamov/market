@@ -86,7 +86,7 @@ gulp.task('style:build', function () {
       };
     }))
     .pipe(prefixer({
-      browsers: ['last 2 versions', '> 1%']
+      browsers: ['last 2 versions','> 1%','Android 4.4','ios_saf >=7']
     }))
    // .pipe(base64({
    //   extensions: ['svg'],

@@ -229,11 +229,6 @@ div.wrapper {
   padding: 0 0;
   position: absolute;
   right : -243px;
-  top: 287px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 10px;
   color: rgb(255, 255, 255);
@@ -248,10 +243,6 @@ div.wrapper {
   position: absolute;
   left : -243px;
   top: 680px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 10px;
   color: rgb(255, 255, 255);
@@ -441,10 +432,6 @@ div.first {
   position: absolute;
   top: 286px;
   right: -200px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 11px;
   text-transform: uppercase;
@@ -473,8 +460,6 @@ div.four.slider {
 }
 
 .slick-track {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -485,19 +470,11 @@ div.four.slider {
   outline: none;
   background-color: white;
   box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  //-webkit-box-align: center;
- // -ms-flex-align: center;
- // align-items: center;
+
+
   height: auto !important;
   float: none !important;
 }

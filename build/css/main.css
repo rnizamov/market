@@ -750,9 +750,8 @@ div.wrapper {
   padding: 0 0;
   position: absolute;
   right: -243px;
-  top: 287px;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
   font-size: 10px;
   color: white;
   text-transform: uppercase;
@@ -766,7 +765,7 @@ div.wrapper {
   left: -243px;
   top: 680px;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
   font-size: 10px;
   color: white;
   text-transform: uppercase;
@@ -925,7 +924,7 @@ div.first {
   top: 286px;
   right: -200px;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -950,6 +949,7 @@ div.four.slider {
 
 .slick-track {
   display: -webkit-box !important;
+  display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important; }
 
@@ -961,15 +961,18 @@ div.four.slider {
   background-color: white;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
   display: -webkit-box !important;
+  display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: auto !important;
   float: none !important; }
 
