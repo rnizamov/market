@@ -16,7 +16,7 @@ html {
   min-width: 1180px;
   max-width: $width;
   overflow: hidden;
-}
+ }
 
 .horizontal_text {
   min-height: 44px;
@@ -43,18 +43,28 @@ section.white_padding {
 
 .menu_fixed {
   position: fixed;
-  max-width: 1600px;
-  background-color: rgba(98,25,30,.4);
+  width: 100%;
   z-index: 10;
+  height: 0;
+  > div {
+    margin: 90px auto 0 auto;
+    padding: 0 100px 0 0;
+    max-width: $width;
+    height: 0;
+  }
 }
 
-.menu_right {
-  list-style: none;
 
+.menu_right {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu_right li {
   display: inline-block;
+  cursor: pointer;
 }
 
 .search {
@@ -235,6 +245,7 @@ div.wrapper {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: left;
+  z-index: 5;
 }
 
 .vertical_left {
@@ -558,5 +569,24 @@ div.four.slider {
   line-height: 2.5;
   text-align: left;
   padding: 0 0 0 53px;
+}
+
+.five {
+  width: 100%;
+  box-sizing: border-box;
+  border-left: black 40px solid;
+  background: url(../i/five.png) no-repeat;
+  min-height: 1160px;
+  position: relative;
+  &:after {
+    display: block;
+    background: url(../i/two_wave2.png);
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    position: absolute;
+  }
 }
 
