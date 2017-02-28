@@ -406,7 +406,7 @@ section.three {
 
 div.first {
   width: 368px;
-  margin: 0 100px 0 0;
+  margin: 0 46px 0 0;
   vertical-align: top;
 }
 
@@ -588,5 +588,17 @@ div.four.slider {
     height: 300px;
     position: absolute;
   }
+  .vertical_right {
+    top: 300px;
+  }
+  .heading{ padding-bottom: 73px; }
+  .date { padding-left: 495px; }
+  .after_date { padding-left: 495px; }
+  .annotation { padding-left: 495px; }
 }
 
+.six {
+  width: 100%;
+  min-height: 400px;
+  background: #000;
+}
