@@ -342,7 +342,8 @@ footer.two::before {
 
 }
 
-footer.two {
+section footer.two {
+
   position: relative;
   background: url(../i/two_footer.png) no-repeat left top;
   width: 100%;
@@ -598,7 +599,98 @@ div.four.slider {
 }
 
 .six {
+  padding: 100px 0 0 0;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   background: #000;
+  .left {
+    float: left;
+    width: 412px;
+  }
+  .right {
+    float: right;
+    width: 540px;
+
+  }
+  p {
+    color: white;
+    font-size: 13px;
+    line-height: 1.923;
+    text-align: left;
+  }
+
+  form {
+    display: inline-block;
+    width: 370px;
+    box-sizing: border-box;
+  }
+  label {
+    color: white;
+    font-size: 13px;
+    line-height: 1.923;
+    text-align: left;
+    width: 320px;
+    height: 40px;
+    display: inline-block;
+  }
+  input {
+    width: 319px;
+    height: 47px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0 0 0 20px;
+    margin: 0 0;
+    float: left;
+    background: white;
+
+  }
+  button {
+    width: 47px;
+    height: 47px;
+    box-sizing: border-box;
+    border:none;
+    padding: 0 0;
+    margin: 0 0;
+    color: rgb(209, 35, 42);
+    background: white;
+    font-size: 30px;
+  }
 }
+.social {
+  float:left;
+  width: 160px;
+  height: 44px;
+   a {
+    margin: 43px 10px 0 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .facebook {
+    background:rgb(209,35,42) url(../i/facebook.png) no-repeat left 15px top 11px;
+  }
+  .twitter {
+    background:rgb(209,35,42) url(../i/twitter.png) no-repeat left 11px top 14px;
+  }
+  .instagram {
+    background:rgb(209,35,42) url(../i/instagram.png) no-repeat left 12px top 12px;
+  }
+}
+
+.clear_fix:before,
+.clear_fix:after {
+  content: "";
+  display: table;
+}
+
+.clear_fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
